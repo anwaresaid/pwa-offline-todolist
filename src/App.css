@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +38,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+.todo-list {
+  background-color: rgb(76, 51, 152);
+  width: 400px;
+  border-radius: 14px;
+  height: 600px;
+  color: rgb(255, 211, 0);
+  overflow: auto; /* Or overflow: scroll; */
+}
+
+.list-item:hover {
+  background-color: rgb(255, 211, 0);
+  color: rgb(76, 51, 152);
+  cursor: pointer;
+}
+
+.title {
+  background-color: rgb(255, 211, 0);
+  color: rgb(76, 51, 152);
+  margin: 20px !important;
+  border-radius: 14px;
+}
+
+.submit-btn {
+  border-color: rgb(76, 51, 152) !important;
+  color: rgb(255, 211, 0) !important;
+  margin: 5px !important;
 }
